@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24E68D223ACF9B3FC6CFF130 /* libPods-HttpsSignatureCertificate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF67F3F315025299034E1347 /* libPods-HttpsSignatureCertificate.a */; };
+		D7B03C931DFF9A7B007F6567 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B03C921DFF9A7B007F6567 /* main.m */; };
+		D7B03C961DFF9A7B007F6567 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B03C951DFF9A7B007F6567 /* AppDelegate.m */; };
+		D7B03C991DFF9A7B007F6567 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B03C981DFF9A7B007F6567 /* ViewController.m */; };
+		D7B03C9C1DFF9A7B007F6567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B03C9A1DFF9A7B007F6567 /* Main.storyboard */; };
+		D7B03C9E1DFF9A7B007F6567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B03C9D1DFF9A7B007F6567 /* Assets.xcassets */; };
+		D7B03CA11DFF9A7B007F6567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B03C9F1DFF9A7B007F6567 /* LaunchScreen.storyboard */; };
+		D7B03CAA1DFF9AB0007F6567 /* AKNetPackegeAFN.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B03CA91DFF9AB0007F6567 /* AKNetPackegeAFN.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3DB6AB6D205454489B4EC835 /* Pods-HttpsSignatureCertificate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HttpsSignatureCertificate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HttpsSignatureCertificate/Pods-HttpsSignatureCertificate.debug.xcconfig"; sourceTree = "<group>"; };
+		5486FEFE742ABC0D58F147C3 /* Pods-HttpsSignatureCertificate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HttpsSignatureCertificate.release.xcconfig"; path = "Pods/Target Support Files/Pods-HttpsSignatureCertificate/Pods-HttpsSignatureCertificate.release.xcconfig"; sourceTree = "<group>"; };
+		D7B03C8E1DFF9A7B007F6567 /* HttpsSignatureCertificate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HttpsSignatureCertificate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B03C921DFF9A7B007F6567 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7B03C941DFF9A7B007F6567 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7B03C951DFF9A7B007F6567 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D7B03C971DFF9A7B007F6567 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D7B03C981DFF9A7B007F6567 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D7B03C9B1DFF9A7B007F6567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7B03C9D1DFF9A7B007F6567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7B03CA01DFF9A7B007F6567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7B03CA21DFF9A7B007F6567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7B03CA81DFF9AB0007F6567 /* AKNetPackegeAFN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNetPackegeAFN.h; sourceTree = "<group>"; };
+		D7B03CA91DFF9AB0007F6567 /* AKNetPackegeAFN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNetPackegeAFN.m; sourceTree = "<group>"; };
+		EF67F3F315025299034E1347 /* libPods-HttpsSignatureCertificate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HttpsSignatureCertificate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7B03C8B1DFF9A7B007F6567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E68D223ACF9B3FC6CFF130 /* libPods-HttpsSignatureCertificate.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48C4C920FF02208FDC07B40D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF67F3F315025299034E1347 /* libPods-HttpsSignatureCertificate.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76940E5B7AD3C9708AE0EAF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DB6AB6D205454489B4EC835 /* Pods-HttpsSignatureCertificate.debug.xcconfig */,
+				5486FEFE742ABC0D58F147C3 /* Pods-HttpsSignatureCertificate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7B03C851DFF9A7A007F6567 = {
+			isa = PBXGroup;
+			children = (
+				D7B03C901DFF9A7B007F6567 /* HttpsSignatureCertificate */,
+				D7B03C8F1DFF9A7B007F6567 /* Products */,
+				76940E5B7AD3C9708AE0EAF0 /* Pods */,
+				48C4C920FF02208FDC07B40D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D7B03C8F1DFF9A7B007F6567 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7B03C8E1DFF9A7B007F6567 /* HttpsSignatureCertificate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7B03C901DFF9A7B007F6567 /* HttpsSignatureCertificate */ = {
+			isa = PBXGroup;
+			children = (
+				D7B03CA81DFF9AB0007F6567 /* AKNetPackegeAFN.h */,
+				D7B03CA91DFF9AB0007F6567 /* AKNetPackegeAFN.m */,
+				D7B03C941DFF9A7B007F6567 /* AppDelegate.h */,
+				D7B03C951DFF9A7B007F6567 /* AppDelegate.m */,
+				D7B03C971DFF9A7B007F6567 /* ViewController.h */,
+				D7B03C981DFF9A7B007F6567 /* ViewController.m */,
+				D7B03C9A1DFF9A7B007F6567 /* Main.storyboard */,
+				D7B03C9D1DFF9A7B007F6567 /* Assets.xcassets */,
+				D7B03C9F1DFF9A7B007F6567 /* LaunchScreen.storyboard */,
+				D7B03CA21DFF9A7B007F6567 /* Info.plist */,
+				D7B03C911DFF9A7B007F6567 /* Supporting Files */,
+			);
+			path = HttpsSignatureCertificate;
+			sourceTree = "<group>";
+		};
+		D7B03C911DFF9A7B007F6567 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7B03C921DFF9A7B007F6567 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7B03C8D1DFF9A7B007F6567 /* HttpsSignatureCertificate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7B03CA51DFF9A7B007F6567 /* Build configuration list for PBXNativeTarget "HttpsSignatureCertificate" */;
+			buildPhases = (
+				CE4A96E1ADF103F10E81CBF0 /* [CP] Check Pods Manifest.lock */,
+				D7B03C8A1DFF9A7B007F6567 /* Sources */,
+				D7B03C8B1DFF9A7B007F6567 /* Frameworks */,
+				D7B03C8C1DFF9A7B007F6567 /* Resources */,
+				00E7A564C013687A15B06637 /* [CP] Embed Pods Frameworks */,
+				ADACBFA97C4E32F733A5CDEE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HttpsSignatureCertificate;
+			productName = HttpsSignatureCertificate;
+			productReference = D7B03C8E1DFF9A7B007F6567 /* HttpsSignatureCertificate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7B03C861DFF9A7A007F6567 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Kuture;
+				TargetAttributes = {
+					D7B03C8D1DFF9A7B007F6567 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D7B03C891DFF9A7A007F6567 /* Build configuration list for PBXProject "HttpsSignatureCertificate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7B03C851DFF9A7A007F6567;
+			productRefGroup = D7B03C8F1DFF9A7B007F6567 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7B03C8D1DFF9A7B007F6567 /* HttpsSignatureCertificate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7B03C8C1DFF9A7B007F6567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B03CA11DFF9A7B007F6567 /* LaunchScreen.storyboard in Resources */,
+				D7B03C9E1DFF9A7B007F6567 /* Assets.xcassets in Resources */,
+				D7B03C9C1DFF9A7B007F6567 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00E7A564C013687A15B06637 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HttpsSignatureCertificate/Pods-HttpsSignatureCertificate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADACBFA97C4E32F733A5CDEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HttpsSignatureCertificate/Pods-HttpsSignatureCertificate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE4A96E1ADF103F10E81CBF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7B03C8A1DFF9A7B007F6567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B03CAA1DFF9AB0007F6567 /* AKNetPackegeAFN.m in Sources */,
+				D7B03C991DFF9A7B007F6567 /* ViewController.m in Sources */,
+				D7B03C961DFF9A7B007F6567 /* AppDelegate.m in Sources */,
+				D7B03C931DFF9A7B007F6567 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7B03C9A1DFF9A7B007F6567 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7B03C9B1DFF9A7B007F6567 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7B03C9F1DFF9A7B007F6567 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7B03CA01DFF9A7B007F6567 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7B03CA31DFF9A7B007F6567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D7B03CA41DFF9A7B007F6567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7B03CA61DFF9A7B007F6567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB6AB6D205454489B4EC835 /* Pods-HttpsSignatureCertificate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HttpsSignatureCertificate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = austin.HttpsSignatureCertificate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7B03CA71DFF9A7B007F6567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5486FEFE742ABC0D58F147C3 /* Pods-HttpsSignatureCertificate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HttpsSignatureCertificate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = austin.HttpsSignatureCertificate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7B03C891DFF9A7A007F6567 /* Build configuration list for PBXProject "HttpsSignatureCertificate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B03CA31DFF9A7B007F6567 /* Debug */,
+				D7B03CA41DFF9A7B007F6567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7B03CA51DFF9A7B007F6567 /* Build configuration list for PBXNativeTarget "HttpsSignatureCertificate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B03CA61DFF9A7B007F6567 /* Debug */,
+				D7B03CA71DFF9A7B007F6567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7B03C861DFF9A7A007F6567 /* Project object */;
+}
