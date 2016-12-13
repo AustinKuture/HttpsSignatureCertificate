@@ -1,0 +1,2 @@
+# HttpsSignatureCertificate
+iOS 使用AFN对自签名证书进行验证的封装
