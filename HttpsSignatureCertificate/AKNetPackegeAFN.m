@@ -52,7 +52,7 @@
             SecTrustRef serverTrust = [[challenge protectionSpace] serverTrust];
             
             //导入自签名证书
-            NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"你的证书名字" ofType:@"cer"];
+            NSString *cerPath = [[NSBundle mainBundle] pathForResource:signature ofType:@"cer"];
             NSData *cerData = [NSData dataWithContentsOfFile:cerPath];
             
             if (!cerData) {
