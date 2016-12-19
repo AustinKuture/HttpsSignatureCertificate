@@ -62,8 +62,7 @@
                 return 0;
             }
             
-            NSArray *cerArray = @[cerData];
-            weakSelf.manager.securityPolicy.pinnedCertificates = cerArray;
+            weakSelf.manager.securityPolicy.pinnedCertificates = [NSSet setWithArray:@[cerData]];
             SecCertificateRef caRef = SecCertificateCreateWithData(NULL, (__bridge CFDataRef)cerData);
             NSCAssert(caRef != nil, @"caRef is nil");
             
