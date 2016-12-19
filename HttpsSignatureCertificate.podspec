@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
     s.homepage     = 'https://github.com/AustinKuture/HttpsSignatureCertificate'
     s.authors      = {'AustinKuture' => 'austinkuture@126.com'}
     s.platform     = :ios, '8.0'
+    s.ios.deployment_target = '8.0'
     s.source       = {:git => 'https://github.com/AustinKuture/HttpsSignatureCertificate.git', :tag => '1.0'}
     s.source_files = 'HttpsSignatureCertificate/    AKNetPackegeAFN.{h,m}'
     s.dependency "AFNetworking", "~> 3.0"
