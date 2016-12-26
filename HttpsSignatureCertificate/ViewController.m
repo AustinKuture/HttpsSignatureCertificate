@@ -32,7 +32,7 @@
      */
     
     AKNetPackegeAFN *netHttps = [AKNetPackegeAFN shareHttpManager];
-    [netHttps netWorkType:AKNetWorkGET Signature:nil API:@"" Parameters:nil Success:^(id json) {
+    [netHttps netWorkType:AKNetWorkGET Signature:nil API:@"https://d.jd.com/lab/get?callback=lab" Parameters:nil Success:^(id json) {
         
         NSLog(@"Json:%@",json);
     } Fail:^(NSError *error) {

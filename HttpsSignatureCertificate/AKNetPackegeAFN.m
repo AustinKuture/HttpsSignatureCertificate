@@ -29,11 +29,12 @@
 
 - (void)netWorkType:(AKNetWorkType)netWorkType Signature:(NSString *)signature API:(NSString *)api Parameters:(NSDictionary *)parameters Success:(HttpSuccess)sucess Fail:(HttpErro)fail{
     
-    //开启证书验证模式
-    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
+   
+  
+    //是否允许使用自签名证书和证书验证模式
+    AFSecurityPolicy *securityPolicy;
     
-    //是否允许使用自签名证书
-    signature == nil ? (void)(securityPolicy.allowInvalidCertificates = NO):(securityPolicy.allowInvalidCertificates = YES);
+    signature == nil || [signature isEqualToString:@""] ? (void)(securityPolicy.allowInvalidCertificates = NO,securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone]):(securityPolicy.allowInvalidCertificates = YES,securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate]);
     
     //是否需要验证域名
     securityPolicy.validatesDomainName = NO;
