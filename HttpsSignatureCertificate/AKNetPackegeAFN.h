@@ -25,12 +25,13 @@ typedef void (^HttpErro)(NSError* error);
  signature:是否使用签名证书，是的话直接写入证书名字，否的话填nil
  api:请求的URL接口
  parameters:请求参数
+ requestTimes:超时时间
  sucess:请求成功时的返回值
  fail:请求失败时的返回值
  *
  */
 
-- (void)netWorkType:(AKNetWorkType)netWorkType Signature:(NSString *)signature API:(NSString *)api Parameters:(NSDictionary *)parameters Success:(HttpSuccess)sucess Fail:(HttpErro)fail;
+- (void)netWorkType:(AKNetWorkType)netWorkType Signature:(NSString *)signature API:(NSString *)api Parameters:(NSDictionary *)parameters RequestTimes:(float)requestTimes Success:(HttpSuccess)sucess Fail:(HttpErro)fail;
 
 
 

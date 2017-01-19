@@ -27,10 +27,8 @@
     return httpManager;
 }
 
-- (void)netWorkType:(AKNetWorkType)netWorkType Signature:(NSString *)signature API:(NSString *)api Parameters:(NSDictionary *)parameters Success:(HttpSuccess)sucess Fail:(HttpErro)fail{
+- (void)netWorkType:(AKNetWorkType)netWorkType Signature:(NSString *)signature API:(NSString *)api Parameters:(NSDictionary *)parameters RequestTimes:(float)requestTimes Success:(HttpSuccess)sucess Fail:(HttpErro)fail{
     
-   
-  
     //是否允许使用自签名证书和证书验证模式
     AFSecurityPolicy *securityPolicy;
     
@@ -43,6 +41,11 @@
     _manager.responseSerializer = [AFJSONResponseSerializer serializer];
     _manager.securityPolicy = securityPolicy;
     _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"application/xml",@"text/xml",@"text/json",@"text/plain",@"text/javascript",@"text/html", nil];
+    
+    
+    [_manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    _manager.requestSerializer.timeoutInterval = requestTimes;
+    [_manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
     
     if (signature != nil){
         
