@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AKNetPackegeAFN.h"
+#import "AKImgUploadView.h"
 
 #define WIDTH  [UIScreen mainScreen].bounds.size.width
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
@@ -16,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollV;
 @property (strong, nonatomic) UILabel *contentLable;
 
+@property (nonatomic,strong) AKImgUploadView *upload;
+
 @end
 
 @implementation ViewController
@@ -23,6 +26,80 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    //单张或多张图片上传
+    [self uploadPicture];
+    
+    //自签名https请求Json数据
+//    [self loadHttpsJson];
+    
+}
+
+#pragma makr ***单张或多张图片上传***
+- (void)uploadPicture{
+    
+    //选择视图
+    _upload = [[AKImgUploadView alloc]initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.width)];
+    _upload.backgroundColor = [UIColor lightGrayColor];
+    
+    //发送按钮
+    UIButton *selectedPic = [[UIButton alloc]initWithFrame:CGRectMake(350, 500, 50, 50)];
+    selectedPic.backgroundColor = [UIColor redColor];
+    selectedPic.layer.cornerRadius = 10;
+    selectedPic.layer.masksToBounds = YES;
+    
+    [selectedPic setTitle:@"上传" forState:UIControlStateNormal];
+    [selectedPic addTarget:self action:@selector(imgSData) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:_upload];
+    [self.view addSubview:selectedPic];
+}
+
+- (void)imgSData{
+    
+    /*
+     * api:请求的URL接口
+     * signature:是否使用签名证书，是的话直接写入证书名字，否的话填nil
+     * parameters:请求参数
+     * requestTimes:请求时间
+     * images:要上传的图片数组
+     * compression:图片压缩倍数(小于等于1)
+     * fileName:上传文件名(多张上传时只有一个名字)
+     * ImageName:图片名(多张上传时图片名字不相同)
+     * imageType:图片的类型(例如.png格式为 : @"image/png")
+     * progress:上传进程
+     * sucess:请求成功时的返回值
+     * fail:请求失败时的返回值
+     */
+    
+//    NSString *url = @"https://sm.ms/api/upload"; @"smfile",
+    NSString *url = @"http://192.168.199.249:8080/irp/microblog/microblogContentPic.action?token=1111111111";
+    
+    AKNetPackegeAFN *uploadPic = [AKNetPackegeAFN shareHttpManager];
+    
+    [uploadPic uploadPictureWithAPI:url
+                          Signature:nil
+                         Parameters:nil
+                       RequestTimes:60.f
+                             Images:_upload.images
+                 CompressionQuality:0.1 fileName:@"picFile"
+                          ImageName:@"picFileFileName"
+                          ImageType:@"image/png"
+                     UploadProgress:^(NSProgress *uploadProgress) {
+                         
+                         NSLog(@"=========uploadProgress:%@",uploadProgress);
+                     } Success:^(id json) {
+                         
+                         NSLog(@"Success:%@",json);
+                     } Fail:^(NSError *error) {
+                         
+                         NSLog(@"Error====:%@",error);
+                     }];
+}
+
+
+#pragma mark ***自签名https请求Json数据***
+- (void)loadHttpsJson{
+    
     //创建对象
     //如果是自签名证书，使用前先将自签名证书进行绑定（证书直接拖入项目中即可）
     /*

@@ -67,13 +67,11 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		D7A515341F0A38D400ADD1BD /* 图片选择 */ = {
+		D7A515331F0A38BB00ADD1BD /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				D7A515301F0A38A400ADD1BD /* AKImgUploadView.h */,
-				D7A515311F0A38A400ADD1BD /* AKImgUploadView.m */,
 			);
-			name = "图片选择";
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		D7B03C851DFF9A7A007F6567 = {
@@ -97,11 +95,13 @@
 		D7B03C901DFF9A7B007F6567 /* HttpsSignatureCertificate */ = {
 			isa = PBXGroup;
 			children = (
-				D7A515341F0A38D400ADD1BD /* 图片选择 */,
+				D7A515331F0A38BB00ADD1BD /* New Group */,
 				D7B03C941DFF9A7B007F6567 /* AppDelegate.h */,
 				D7B03C951DFF9A7B007F6567 /* AppDelegate.m */,
 				D7A5152D1F0A372200ADD1BD /* AKNetPackegeAFN.h */,
 				D7A5152E1F0A372200ADD1BD /* AKNetPackegeAFN.m */,
+				D7A515301F0A38A400ADD1BD /* AKImgUploadView.h */,
+				D7A515311F0A38A400ADD1BD /* AKImgUploadView.m */,
 				D7B03C971DFF9A7B007F6567 /* ViewController.h */,
 				D7B03C981DFF9A7B007F6567 /* ViewController.m */,
 				D7B03C9A1DFF9A7B007F6567 /* Main.storyboard */,

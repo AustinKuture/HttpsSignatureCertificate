@@ -2,7 +2,7 @@
 //  AKNetPackegeAFN.h
 //  AKPackageAFN
 //
-//  Created by 李亚坤 on 2016/11/20.
+//  Created by 李亚坤 on 2016/10/20.
 //  Copyright © 2016年 Kuture. All rights reserved.
 //
 
@@ -10,28 +10,76 @@
 
 typedef enum{
     
-    AKNetWorkGET ,   /**< GET请求 */
-    AKNetWorkPOST = 1 /**< POST请求 */
+    /**
+     * GET请求
+     */
+    AKNetWorkGET ,
+    
+    /**
+     * POST 请求
+     */
+    AKNetWorkPOST = 1
 }AKNetWorkType;
+
+/**
+ * 请求成功时的返回值
+ */
 typedef void (^HttpSuccess)(id json);
+
+/**
+ * 请求失败时的返回值
+ */
 typedef void (^HttpErro)(NSError* error);
+
+/**
+ * 当前传输进程的返回值
+ */
+typedef void (^HttpProgress)(NSProgress* uploadProgress);
+
+
 @interface AKNetPackegeAFN : NSObject
 
+/**
+ * 单例
+ */
 +(instancetype)shareHttpManager;
 
-/*
+/**
  *
- netWorkType:请求方式 GET 或 POST
- signature:是否使用签名证书，是的话直接写入证书名字，否的话填nil
- api:请求的URL接口
- parameters:请求参数
- requestTimes:超时时间
- sucess:请求成功时的返回值
- fail:请求失败时的返回值
+ * 自签名https请求Json数据
  *
  */
+- (void)netWorkType:(AKNetWorkType)netWorkType
+          Signature:(NSString *)signature
+                API:(NSString *)api
+         Parameters:(NSDictionary *)parameters
+       RequestTimes:(float)requestTimes
+            Success:(HttpSuccess)sucess
+               Fail:(HttpErro)fail;
 
-- (void)netWorkType:(AKNetWorkType)netWorkType Signature:(NSString *)signature API:(NSString *)api Parameters:(NSDictionary *)parameters RequestTimes:(float)requestTimes Success:(HttpSuccess)sucess Fail:(HttpErro)fail;
+/**
+ *
+ * 单张或多张图片的上传
+ *
+ */
+- (void)uploadPictureWithAPI:(NSString *)api
+                   Signature:(NSString *)signature
+                  Parameters:(NSDictionary *)parameters
+                RequestTimes:(float)requestTimes
+                      Images:(NSMutableArray *)images
+          CompressionQuality:(float)compression
+                    fileName:(NSString *)fileName
+                   ImageName:(NSString *)imageName
+                   ImageType:(NSString *)imageType
+              UploadProgress:(HttpProgress)progress
+                     Success:(HttpSuccess)success
+                        Fail:(HttpErro)fail;
+
+
+
+
+
+
 
 
 
