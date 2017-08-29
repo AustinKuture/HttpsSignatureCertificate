@@ -26,6 +26,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    //--为了能上传图片设置了ATS为YES,测试https时可以在info.plist中将其删除--
+    
+    
     //单张或多张图片上传
     [self uploadPicture];
     
@@ -39,7 +42,7 @@
     
     //选择视图
     _upload = [[AKImgUploadView alloc]initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.width)];
-    _upload.backgroundColor = [UIColor lightGrayColor];
+    _upload.backgroundColor = [UIColor whiteColor];
     
     //发送按钮
     UIButton *selectedPic = [[UIButton alloc]initWithFrame:CGRectMake(350, 500, 50, 50)];
@@ -72,14 +75,20 @@
      */
     
 //    NSString *url = @"https://sm.ms/api/upload"; @"smfile",
-    NSString *url = @"http://192.168.199.249:8080/irp/microblog/microblogContentPic.action?token=1111111111";
+//    NSString *url = @"http://chuantu.biz/upload.php";
+    NSString *url = @"http://123.56.1.180:9999/api";
+    NSMutableDictionary *parmeters = [NSMutableDictionary new];
+    [parmeters setValue:@"token" forKey:@"0090990390039020048777589839"];
+    [parmeters setValue:@"wbcontext" forKey:@"lsldfkalsdfl;asdf;llkskdjf"];
     
     AKNetPackegeAFN *uploadPic = [AKNetPackegeAFN shareHttpManager];
     
+    //选择的图片会存于_upload.images中
+    
     [uploadPic uploadPictureWithAPI:url
                           Signature:nil
-                         Parameters:nil
-                       RequestTimes:60.f
+                         Parameters:parmeters
+                       RequestTimes:500.f
                              Images:_upload.images
                  CompressionQuality:0.1 fileName:@"picFile"
                           ImageName:@"picFileFileName"
@@ -89,7 +98,14 @@
                          NSLog(@"=========uploadProgress:%@",uploadProgress);
                      } Success:^(id json) {
                          
-                         NSLog(@"Success:%@",json);
+                         NSLog(@"====Success:%@",json);
+                         
+                         UIAlertController *alertV = [UIAlertController alertControllerWithTitle:@"上传成功" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+                         UIAlertAction *donev = [UIAlertAction actionWithTitle:@"完成" style:UIAlertActionStyleDefault handler:nil];
+                         
+                         [alertV addAction:donev];
+                         [self presentViewController:alertV animated:YES completion:nil];
+                         
                      } Fail:^(NSError *error) {
                          
                          NSLog(@"Error====:%@",error);

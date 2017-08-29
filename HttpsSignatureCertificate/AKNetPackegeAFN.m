@@ -210,7 +210,8 @@
     securityPolicy.validatesDomainName = NO;
     
     _manager = [[AFHTTPSessionManager alloc]initWithBaseURL:[NSURL URLWithString:api]];
-    _manager.responseSerializer = [AFJSONResponseSerializer serializer];
+//    _manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     _manager.securityPolicy = securityPolicy;
     _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",
                                                           @"application/octet-stream",
